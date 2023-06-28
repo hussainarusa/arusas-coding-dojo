@@ -1,0 +1,78 @@
+
+/* (A) ADD ITEM */
+#gro-form, input, button {
+    font-size: 16px;
+    padding: 10px;
+}
+#gro-form {
+    display: flex;
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+}
+
+
+button,
+input[type=button],
+input[type=submit] {
+    cursor: pointer;
+    color: #fff;
+    background: #909042;
+    border: 0;
+}
+
+input[type=number] {
+    width: 80px;
+}
+
+input[type=text] {
+    flex-grow: 1;
+    border: 0;
+}
+
+/* (B) ITEMS LIST */
+#gro-list { margin-top: 20px; }
+.item-row {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.item-row.yes { background: #9fc9e1; }
+.item-row.no { background: #edace9; }
+.item-name {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+.item-ok {
+    color: #000000;
+    background: none;
+}
+
+/* (X) DOES NOT MATTER */
+/* PAGE & BODY */
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center; justify-content: center;
+    min-height: 100vh;
+    background-color: #c0c064;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* WIDGET */
+.widget-wrap {
+    min-width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+
+h1{
+    text-align: center;
+}
+

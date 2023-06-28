@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Grocery Bud</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/grocery-list.css">
 </head>
 <body>
-$END$
+<div class="widget-wrap">
+    <div id="cart"></div>
+    <h1>GROCERY BUDDIE &#x1F6D2</h1>
+
+    <!--  ADD ITEM -->
+    <form id="gro-form">
+        <input type="number" id="gro-qty" min="1" value="1" placeholder="Quantity" required disabled>
+        <input type="text" id="gro-item" placeholder="Item Name" required disabled>
+        <button id="gro-add" class="material-icons" disabled>add</button>
+    </form>
+
+    <!-- ITEM LIST -->
+    <div id="gro-list"></div>
+
+</div>
+
+<script src="js/grocery-list.js"></script>
 </body>
-</html>
