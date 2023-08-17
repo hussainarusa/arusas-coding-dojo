@@ -1,0 +1,42 @@
+/*table {*/
+/*    border-collapse: collapse;*/
+/*    margin: 15px 0;*/
+/*}*/
+
+/*td, th {*/
+/*    border: 1px solid black;*/
+/*    padding: 5px 10px;*/
+/*}*/
+
+
+
+/* .column-selector#coffee-column {*/
+/*     display: none;*/
+/* }*/
+
+
+/*.container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 100vh;*/
+/*}*/
+
+/*.grid {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+/*    grid-gap: 20px;*/
+/*    max-width: 800px;*/
+/*}*/
+
+/*.coffee {*/
+/*    background-color: #de9a9a;*/
+/*    padding: 10px;*/
+/*    text-align: center;*/
+/*    font-weight: bold;*/
+/*}*/
+
+.coffee-container{
+    ;
+
+}

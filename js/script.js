@@ -86,6 +86,20 @@ function handleResultValidation(){
     let roundWon = false;
     for (let i = 0; i <= 7; i++){
         const winCondition = winningPatterns[i];
-        let a = gameState [winCondition[0]]
+        let a = gameState [winCondition[0]];
+        let b = gameState [winCondition[1]];
+        let c = gameState [winCondition[2]];
+        if (a === '' || b === '' || c=== ''){
+            continue;
+        }
+        if (a === b && b === c){
+            roundWon = true;
+            break
+        }
     }
+        if(roundWon){
+            statusDisplay.innerHTML = winningMessage();
+            gameActive = false;
+            return;
+        }
 }
