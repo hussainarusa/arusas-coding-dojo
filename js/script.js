@@ -102,4 +102,36 @@ function handleResultValidation(){
             gameActive = false;
             return;
         }
+
+// check weather there are any values in our game state array
+// that are still not populated with a player sign
+    let roundDraw = !gameState.includes("");
+    if (roundDraw){
+        statusDisplay.innerHTML = drawMessages();
+        gameActive = false;
+        return;
+    }
+
+
+
+    handlePlayerChange();
+
+}
+
+function handlePlayerChange(){
+    currentPlayer = currentPlayer === "X" ? "O" : "X";
+    statusDisplay.innerHTML = currentPlayerTurn();
+}
+
+
+//restarting the game
+
+function handleRestartGame (){
+    gameActive = true;
+    currentPlayer = "X"
+    gameState = ["","","","","","","","",""];
+    statusDisplay.innerHTML = currentPlayerTurn();
+    document.querySelectorAll('.cell')
+        .forEach(cell => cell.innerHTML = "");
+
 }
