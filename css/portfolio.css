@@ -10947,7 +10947,7 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("https://i.imgur.com/FMYIMQP.jpg");
+    background-image: url("/css/img/Front.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -11311,4 +11311,5 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .footer {
     text-align: center;
-    font-size: 0.9r
+    /*font-size: 0.9rem*/
+}
