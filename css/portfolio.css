@@ -2845,7 +2845,11 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-    --bs-btn-color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    color: red;
+
     --bs-btn-bg: #ffc800;
     --bs-btn-border-color: #ffc800;
     --bs-btn-hover-color: #fff;
