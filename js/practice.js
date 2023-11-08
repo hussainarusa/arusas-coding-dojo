@@ -13,7 +13,7 @@ function changeColor() {
 }
 
 
-document.addEventListener('click', function(event) {
+document.addEventListener("dblclick", function(event) {
     if (!event.target.matches('p')) {return;}
     event.target.style.color = 'red';
 });
