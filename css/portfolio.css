@@ -10897,9 +10897,9 @@ p {
     letter-spacing: 0.0625em;
     text-transform: uppercase;
 }
-#mainNav .navbar-brand img {
-    height: 1.5rem;
-}
+/*#mainNav .navbar-brand img {*/
+/*    height: 1.5rem;*/
+/*}*/
 #mainNav .navbar-nav .nav-item .nav-link {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 0.95rem;
@@ -10923,7 +10923,7 @@ p {
         transition: font-size 0.3s ease-in-out;
     }
     #mainNav .navbar-brand img {
-        height: 2rem;
+
         transition: height 0.3s ease-in-out;
     }
     #mainNav.navbar-shrink {
@@ -10931,13 +10931,13 @@ p {
         padding-bottom: 1rem;
         background-color: #212529;
     }
-    #mainNav.navbar-shrink .navbar-brand {
-        font-size: 1.25em;
-    }
-    #mainNav.navbar-shrink .navbar-brand svg,
-    #mainNav.navbar-shrink .navbar-brand img {
-        height: 1.5rem;
-    }
+    /*#mainNav.navbar-shrink .navbar-brand {*/
+    /*    font-size: 1.25em;*/
+    /*}*/
+    /*#mainNav.navbar-shrink .navbar-brand svg,*/
+    /*#mainNav.navbar-shrink .navbar-brand img {*/
+    /*    height: 1.5rem;*/
+    /*}*/
     #mainNav .navbar-nav .nav-item {
         margin-right: 1rem;
     }
@@ -11320,4 +11320,15 @@ section#contact form#contactForm :-ms-input-placeholder {
 .port-img-row{
     display: flex;
     max-width: 2em;
+}
+
+.close-modal-btn{
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo-on-nav {
+    width: 5rem;
+    height: 5rem;
 }
