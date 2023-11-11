@@ -11332,3 +11332,9 @@ section#contact form#contactForm :-ms-input-placeholder {
     width: 5rem;
     height: 5rem;
 }
+
+.about-p{
+   color: darkred;
+    font-family: 'Montserrat', sans-serif;
+
+}
