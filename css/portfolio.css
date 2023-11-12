@@ -10878,11 +10878,7 @@ p {
     border-radius: 100%;
 }
 
-#mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #212529;
-}
+
 #mainNav .navbar-toggler {
     padding: 0.75rem;
     font-size: 0.75rem;
@@ -10912,10 +10908,10 @@ p {
 
 @media (min-width: 992px) {
     #mainNav {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        border: none;
-        background-color: transparent;
+        /*padding-top: 1.5rem;*/
+        /*padding-bottom: 1.5rem;*/
+        /*border: none;*/
+        background-color: #165bf3;
         transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
     }
     #mainNav .navbar-brand {
@@ -10929,15 +10925,9 @@ p {
     #mainNav.navbar-shrink {
         padding-top: 1rem;
         padding-bottom: 1rem;
-        background-color: #212529;
+        background-color: #165bf3;!important;
     }
-    /*#mainNav.navbar-shrink .navbar-brand {*/
-    /*    font-size: 1.25em;*/
-    /*}*/
-    /*#mainNav.navbar-shrink .navbar-brand svg,*/
-    /*#mainNav.navbar-shrink .navbar-brand img {*/
-    /*    height: 1.5rem;*/
-    /*}*/
+
     #mainNav .navbar-nav .nav-item {
         margin-right: 1rem;
     }
@@ -10945,17 +10935,45 @@ p {
         margin-right: 0;
     }
 }
+/* Default styling for larger screens */
 header.masthead {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
     text-align: center;
     color: rgba(255, 255, 255, 0);
-    background-image: url("/css/img/hero.png");
+    background-image: url("/css/img/hero-scene.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
 }
+
+/* Media query for medium-sized screens (e.g., tablets) */
+@media (max-width: 992px) {
+    header.masthead {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    header.masthead {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* Media query for even smaller screens (e.g., small mobile devices) */
+@media (max-width: 576px) {
+    header.masthead {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    /* Adjust other styles as needed for even smaller screens */
+}
+
+
 header.masthead .masthead-subheading {
     font-size: 1.5rem;
     font-style: italic;
@@ -11334,7 +11352,35 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .about-p{
-   color: darkred;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 
+}
+ .masthead{
+     margin-top: 3rem;
+ }
+
+.port-grid, .about-port {
+    background-color:#edf6ff ;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+    align-items: center;
+
+
+}
+
+.connect-text{
+    color: red;
+    text-align: center;
+}
+
+
+.social-links-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
 }
