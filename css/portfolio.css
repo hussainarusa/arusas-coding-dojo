@@ -11384,3 +11384,22 @@ section#contact form#contactForm :-ms-input-placeholder {
     align-items: flex-end;
     justify-content: space-around;
 }
+
+
+.modal-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.repository-btn-row{
+    display: flex;
+    justify-content: space-around;
+
+}
+.repository-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
