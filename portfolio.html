@@ -241,9 +241,9 @@
         </div>        <div class="timeline-panel">
           <div class="timeline-heading">
             <h4></h4>
-            <h4 class="subheading">Am I the Right Candidate?</h4>
+            <h4 class="subheading">Interested in working together?</h4>
           </div>
-          <div class="timeline-body"><p class="text-muted">Click to further view my qualifications </div>
+          <div class="timeline-body"><p class="text-muted">Click to further view my qualifications! </div>
 
         </div>
       </li>
@@ -281,7 +281,7 @@
     <!-- To make this form functional, sign up at-->
     <!-- https://startbootstrap.com/solution/contact-forms-->
     <!-- to get an API token!-->
-    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+    <form id="contactForm" action="submit_email.php" method="post">
       <div class="row align-items-stretch mb-5">
         <div class="col-md-6">
           <div class="form-group">
@@ -316,9 +316,6 @@
       <div class="d-none" id="submitSuccessMessage">
         <div class="text-center text-white mb-3">
           <div class="fw-bolder">Form submission successful!</div>
-          To activate this form, sign up at
-          <br />
-          <a href="">https://startbootstrap.com/solution/contact-forms</a>
         </div>
       </div>
       <!-- Submit error message-->
@@ -336,7 +333,7 @@
   <div class="container">
     <div class="social-links-container">
 <!--      <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>-->
-      <p>Lets Connect!</p>
+      <p class="lets-connect">Lets Connect :)</p>
       <div class="col-lg-4 my-3 my-lg-0 social-links">
         <a class="btn btn-dark btn-social mx-2" href="https://github.com/hussainarusa"  target="_blank"  aria-label="Arusa Github Profile"><i class="fa-brands fa-github"></i>
           <a class="btn btn-dark btn-social mx-2" href="https://alumni.codeup.com/candidate/arusa-hussain/"  target="_blank" aria-label="Arusa Facebook Profile"><i class="fa-solid fa-graduation-cap"></i>
@@ -366,10 +363,13 @@
                     <img class="img-fluid d-block mx-auto" src="css/img/berry.png" alt="Image 1" />
                   </div>
                   <div class="carousel-item">
-                    <img class="img-fluid d-block mx-auto" src="css/img/berry.png" alt="Image 2" />
+                    <img class="img-fluid d-block mx-auto" src="css/img/c2.png" alt="Image 2" />
                   </div>
                   <div class="carousel-item">
-                    <img class="img-fluid d-block mx-auto" src="css/img/berry.png" alt="Image 3" />
+                    <img class="img-fluid d-block mx-auto" src="css/img/c3.png" alt="Image 3" />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="img-fluid d-block mx-auto" src="css/img/c4.png" alt="Image 3" />
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
@@ -384,18 +384,22 @@
 
               <!-- Project details-->
 
-              <p>This application allows you to track and display your favorite coffees from the "shop" as well as add your favorite roasts.</p>
+              <p class="app-description">The application is an immersive coffee website that allows users to seamlessly search for and favorite different coffee blends. It features a comprehensive CRUD system for managing coffee-related data. The design reflects the company's brand vision, resembling an authentic coffee retailer platform. The use of HTML, JavaScript, CSS, and Bootstrap ensures a dynamic and visually captivating user experience, showcasing a fusion of technical acumen and creative flair.</p>
               <ul class="list-inline">
-                <li>
-                  <strong>Languages:</strong>
-                  Html, Css, Javascript
-                </li>
+<!--                <li>-->
+<!--                  <strong>Languages:</strong>-->
+<!--                  Html, Css, Javascript-->
+<!--                </li>-->
               </ul>
+              <a href="https://github.com/arusa-sam-coffeeProject/arusa-sam-coffeeProject" target="_blank">
               <div class="row repository-btn-row">
+
               <button class="btn btn-primary btn-xl text-uppercase repository-btn " type="button">
                 Github Repository
               </button>
+
               </div>
+              </a>
             </div>
           </div>
         </div>
