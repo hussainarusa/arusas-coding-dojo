@@ -1,63 +1,23 @@
-// let slideIndex = 0;
-// showSlides(slideIndex);
-//
-// function plusSlides(n) {
-//     showSlides(slideIndex += n);
-// }
-//
-// function currentSlide(n) {
-//     showSlides(slideIndex = n);
-// }
-//
-// function showSlides(n) {
-//     let i;
-//     let slides = document.getElementsByClassName("mySlides");
-//     let dots = document.getElementsByClassName("dot");
-//     if (n > slides.length) {slideIndex = 1}
-//     if (n < 1) {slideIndex = slides.length}
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     slides[slideIndex-1].style.display = "block";
-//     dots[slideIndex-1].className += " active";
-// }
 
-document.addEventListener('DOMContentLoaded', function () {
-    let slideIndex = 0;
-    showSlides(slideIndex);
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx5tL-PNbcbOJIGwKE2bL7eHOpfFJUYZMxHQd7V4T_RWrjByqGW0ftq-UO-TtCblJ9I/exec';
+const form = document.forms['submit-to-google-sheet'];
+const submittedMessage = document.getElementById('submitted-message');
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-
-        if (n > slides.length - 1) {
-            slideIndex = 0;
-        }
-        if (n < 0) {
-            slideIndex = slides.length - 1;
-        }
-
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-
-        slides[slideIndex].style.display = "block";
-        dots[slideIndex].className += " active";
-    }
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            console.log('Success!', response);
+            // Show the submitted message on the DOM
+            showSubmittedMessage();
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+            // Handle the error if needed
+        });
 });
+
+function showSubmittedMessage() {
+    // Display the submitted message element
+    submittedMessage.style.display = 'block';
+}
