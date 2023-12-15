@@ -36,34 +36,3 @@ if (result) {
     console.log(`No pair found with sum ${targetSum}`);
 }
 
-// function findPairWithSum(arr, targetSum) {
-//     const numMap = {}; // Using an object as a hash table to store visited numbers
-//
-//     for (let i = 0; i < arr.length; i++) {
-//         const currentNum = arr[i];
-//         const complement = targetSum - currentNum;
-//
-//         // Check if the complement is already in the hash table
-//         if (numMap[complement] !== undefined) {
-//             // Found a pair
-//             return [complement, currentNum];
-//         }
-//
-//         // Add the current number to the hash table
-//         numMap[currentNum] = i;
-//     }
-//
-//     // If no pair is found
-//     return null;
-// }
-//
-// // Example usage:
-// const array = [1, 2, 3, 4, 5];
-// const targetSum = 9;
-// const result = findPairWithSum(array, targetSum);
-//
-// if (result) {
-//     console.log(`Pair with sum ${targetSum}: [${result[0]}, ${result[1]}]`);
-// } else {
-//     console.log(`No pair found with sum ${targetSum}`);
-// }
